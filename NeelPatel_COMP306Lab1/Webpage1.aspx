@@ -6,10 +6,14 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
-   <form background="C:\Neel\study\CENTENNIAL\Sem5\COMP306 API Engg and Cloud Computing\coffee-wallpaper.jpg" id="form1" runat="server">
+<body bgcolor="#ffcc33" style="width: 1204px">
+   <form id="form1" runat="server">
+        <h1>Order your food buddy...</h1> 
         <div>
+            
             <table class="auto-style1">  
+                 
+                                        
                 <tr>  
                     <td>First Name :</td>  
                     <td>  
@@ -22,20 +26,20 @@
                      <td> <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>  
                 </tr>  
                 <tr>  
-                    <td>City</td>  
+                    <td>Address</td>  
                     <td>  
                         <asp:TextBox ID="TextBox3" runat="server" ></asp:TextBox>  
                     </td>  
                 </tr>  
                 <tr>  
-                    <td>Postal Code</td>  
+                    <td>Phone number</td>  
                     <td>  
                         <asp:TextBox ID="TextBox4" runat="server" ></asp:TextBox>  
                     </td> 
                 </tr>
 
                 <tr>  
-                    <td>Phone Number</td>  
+                    <td>Country</td>  
                     <td>  
                         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>  
                     </td>  
@@ -63,7 +67,7 @@
                     </td>
                 </tr>
                 <tr>  
-                    <td>Pickup or Delivery</td>  
+                    <td>Delivery Options</td>  
                     <td>  
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server">  
                             <asp:ListItem>Pick up</asp:ListItem>  
@@ -80,7 +84,7 @@
                   
                 <tr>  
                     <td>  
-                        <asp:Button ID="Button1" runat="server" Text="Button" />  
+                        <asp:Button ID="Button1" runat="server" Text="Submit" />  
                     </td>  
                 </tr>  
             </table>  
