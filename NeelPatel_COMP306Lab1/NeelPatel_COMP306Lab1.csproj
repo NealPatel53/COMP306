@@ -75,6 +75,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Restaurant2.jpg" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -90,6 +91,7 @@
       <DependentUpon>Webpage1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

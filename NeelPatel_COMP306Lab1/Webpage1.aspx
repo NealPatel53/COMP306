@@ -6,8 +6,9 @@
 <head runat="server">
     <title></title>
 </head>
-<body bgcolor="#ffcc33" style="width: 1204px">
+<body style="background-color:powderblue;">
    <form id="form1" runat="server">
+
         <h1>Order your food buddy...</h1> 
         <div>
             
@@ -15,37 +16,41 @@
                  
                                         
                 <tr>  
-                    <td>First Name :</td>  
+                    <td><h3>First Name :</h3></td>  
                     <td>  
                         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>  
                     </td>  
+                     
   
                </tr>  
                 <tr>  
-                    <td>Last Name :</td>  
-                     <td> <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>  
+                    <td><h3>Last Name :</h3></td>  
+                     <td> <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td> 
+                    <td>  
+                        <asp:Button ID="Button2" runat="server" Text="Remember Me" OnClick="Button2_Click" />  
+                    </td>
                 </tr>  
                 <tr>  
-                    <td>Address</td>  
+                    <td><h3>Address</h3></td>  
                     <td>  
                         <asp:TextBox ID="TextBox3" runat="server" ></asp:TextBox>  
                     </td>  
                 </tr>  
                 <tr>  
-                    <td>Phone number</td>  
+                    <td><h3>Number</h3></td>  
                     <td>  
                         <asp:TextBox ID="TextBox4" runat="server" ></asp:TextBox>  
                     </td> 
                 </tr>
 
                 <tr>  
-                    <td>Country</td>  
+                    <td><h3>Country</h3></td>  
                     <td>  
                         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>  
                     </td>  
                 </tr>
                 <tr>
-                    <td>Province</td>
+                    <td><h3>Province</h3></td>
                     <td>
                         <asp:DropDownList ID="DropDownList1" runat="server">
                             <asp:ListItem>ONTARIO</asp:ListItem>
@@ -56,7 +61,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Food and Drinks</td>
+                    <td><h3>Food and Drinks</h3></td>
                     <td>
                         <asp:CheckBoxList ID="CheckboxList1" runat="server">
                             <asp:ListItem>Pizza</asp:ListItem>
@@ -67,7 +72,7 @@
                     </td>
                 </tr>
                 <tr>  
-                    <td>Delivery Options</td>  
+                    <td><h3>Options</h3></td>  
                     <td>  
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server">  
                             <asp:ListItem>Pick up</asp:ListItem>  
@@ -76,7 +81,7 @@
                     </td>  
                </tr>
                 <tr>
-                    <td>Comment</td>
+                    <td><h3>Comment</h3></td>
                     <td> 
                      <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                     </td>
@@ -84,9 +89,10 @@
                   
                 <tr>  
                     <td>  
-                        <asp:Button ID="Button1" runat="server" Text="Submit" />  
+                        <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />  
                     </td>  
                 </tr>  
+                     
             </table>  
         </div>
     </form>
