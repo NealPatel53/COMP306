@@ -121,7 +121,6 @@ namespace NeelPatel_COMP306Lab1
             {
 
                 string cs = ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString;
-
                 using (SqlConnection conn = new SqlConnection(cs))
 
                 {
