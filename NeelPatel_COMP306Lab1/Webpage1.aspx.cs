@@ -49,7 +49,7 @@ namespace NeelPatel_COMP306Lab1
 
                         SqlCommand cmd = new SqlCommand();
 
-                        cmd.CommandText = "select count(firstName) from userEntries where firstName='" + firstName + "'and lastName='" + lastName + "'";
+                        cmd.CommandText = "select count(FirstName) from R1 where FirstName='" + firstName + "'and LastName='" + lastName + "'";
 
                         cmd.Connection = conn;
 
@@ -61,7 +61,7 @@ namespace NeelPatel_COMP306Lab1
 
                         {
 
-                            cmd.CommandText = "select city,postalCode,phoneNumber,province from userEntries where firstName='" + firstName + "'and lastName='" + lastName + "'";
+                            cmd.CommandText = "select Country,Address,Number,Provice from R1 where FirstName='" + firstName + "'and LastName='" + lastName + "'";
 
                             SqlDataReader reader = cmd.ExecuteReader();
 
@@ -77,7 +77,7 @@ namespace NeelPatel_COMP306Lab1
 
                                 TextBox5.Text = Country;
 
-                                long phoneNumber = Convert.ToInt64(reader["phoneNumber"]);
+                                string phoneNumber = reader.GetString(2);
 
                                 TextBox4.Text = phoneNumber.ToString();
 
@@ -108,7 +108,7 @@ namespace NeelPatel_COMP306Lab1
             catch (Exception ex)
             {
 
-                Response.Write(ex.StackTrace);
+                Response.Write(ex.Message);
 
             }
 
@@ -131,7 +131,7 @@ namespace NeelPatel_COMP306Lab1
 
                         SqlCommand cmd = new SqlCommand();
 
-                        cmd.CommandText = "insert into dbo.userEntries values ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox5.Text + "','" + TextBox4.Text + "','" + DropDownList1.Text + "')";
+                        cmd.CommandText = "insert into dbo.R1 values ('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox5.Text + "','" + TextBox4.Text + "','" + DropDownList1.Text + "','Bear','Delivery','Neel')";
 
                         cmd.Connection = conn;
 
@@ -160,7 +160,7 @@ namespace NeelPatel_COMP306Lab1
             catch (Exception ex)
             {
 
-                Response.Write(ex.StackTrace);
+                Response.Write(ex.Message);
 
             }
 
