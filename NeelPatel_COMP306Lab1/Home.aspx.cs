@@ -1,25 +1,17 @@
 ﻿using Restaurant_App.Data_Layer;
 using System;
-
 using System.Collections.Generic;
-
 using System.Configuration;
-
 using System.Data.SqlClient;
-
 using System.Linq;
-
 using System.Web;
-
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
-
 namespace NeelPatel_COMP306Lab1
 {
-
-    public partial class Webpage1 : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected HtmlInputFile fillMyFile;
         private ImageUploader _imageUploader;
@@ -27,7 +19,6 @@ namespace NeelPatel_COMP306Lab1
         {
 
         }
-
         protected void Button2_Click(object sender, EventArgs e)
         {
             try
@@ -173,7 +164,6 @@ namespace NeelPatel_COMP306Lab1
 
         protected void UploadFile_Click(object sender, EventArgs e)
         {
-
             _imageUploader = new ImageUploader("neelrestaurant");
 
             string fileName;
@@ -188,7 +178,7 @@ namespace NeelPatel_COMP306Lab1
 
                     _imageUploader.UploadImage(image, fileName);
 
-                   // fileSubmit.Text = "File Uploaded Successfully";
+                    // fileSubmit.Text = "File Uploaded Successfully";
                 }
             }
             catch (Exception ex)
@@ -198,6 +188,4 @@ namespace NeelPatel_COMP306Lab1
             }
         }
     }
-    
-    
 }

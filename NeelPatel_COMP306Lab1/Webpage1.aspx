@@ -91,6 +91,10 @@
                     <td>  
                         <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />  
                     </td>  
+                    <td>
+                        <asp:FileUpload ID="Upload" runat="server" />
+                        <asp:Button ID="UploadFile" runat="server" Text="Upload File" OnClick="UploadFile_Click" />
+                    </td>
                 </tr>  
                      
             </table>  
